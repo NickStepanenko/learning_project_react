@@ -1,0 +1,60 @@
+.language-currency-choice {
+    & > select {
+        border: 0;
+    }
+}
+
+.main-links {
+    display: flex;
+    align-items: center;
+
+    & > div {
+        display: flex;
+        font-size: 14px;
+        font-family: 'Proxima Nova Semibold', sans-serif;
+        padding-right: 2em;
+        align-items: center;
+    }
+
+    & > .my-profile-link {
+        cursor: pointer;
+
+        & > i {
+            padding-right: 0.4em;
+        }
+    }
+
+    & > .basket-link {
+        cursor: pointer;
+
+        & > div {
+            font-family: 'Proxima Nova Semibold', sans-serif;
+        }
+
+        & > i {
+            padding-right: 0.4em;
+        }
+
+        & > .items-count {
+            padding-right: 0.3em;
+        }
+        
+        & > .overall-price {
+            font-size: 14px;
+            color: #C1C8CE;
+            padding: 0 0.3em;
+
+            &:before {
+                content: '$';
+            }
+        }
+    }
+
+    & > .searchbar {
+        padding-left: 4em;
+
+        & > i {
+            cursor: pointer;
+        }
+    }
+}

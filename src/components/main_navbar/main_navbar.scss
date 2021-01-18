@@ -1,0 +1,41 @@
+.main-navbar {
+    gap: 3em;
+}
+
+.nav-link {
+    color: black;
+    text-decoration: unset;
+    font-family: 'Proxima Nova Semibold', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: color .3s;
+
+    &:active {
+        color: #33A0FF;
+    }
+
+    &:hover {
+        color: #33A0FF;
+    }
+}
+
+nav {
+    width: 660px;
+    margin: 0 auto;
+    padding: 2.5em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+  
+.nav-logo {
+    margin: 0 auto;
+    text-align: center;
+}

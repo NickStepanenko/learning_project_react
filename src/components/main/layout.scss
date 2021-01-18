@@ -1,0 +1,146 @@
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family: 'Proxima Nova Regular', sans-serif;
+    color: #22262A;
+}
+
+body {
+    margin: 0;
+}
+
+h2 {
+    font-family: 'Proxima Nova Semibold', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+h3 {
+    font-family: 'Proxima Nova Semibold', sans-serif;
+    font-size: 18px;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+  
+.flex-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.main-navbar {
+    gap: 3em;
+}
+
+.nav-link {
+    color: black;
+    text-decoration: unset;
+    font-family: 'Proxima Nova Semibold', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: color .3s;
+
+    &:active {
+        color: #33A0FF;
+    }
+
+    &:hover {
+        color: #33A0FF;
+    }
+}
+
+nav {
+    width: 660px;
+    margin: 0 auto;
+    padding: 2.5em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+  
+.nav-logo {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.item-rating {
+    display: flex;
+
+    & > button {
+        background-color: rgba(0,0,0,0);
+        border: 0;
+        padding: 0 0.25em;
+
+        & > i {
+            font-size: 10px;
+            cursor: pointer;
+            transition: color .2s;
+        }
+        
+        & > i.fa-star.active {
+            color: #FFC600;
+        }
+    
+        & > i.fa-star.inactive {
+            color: #C1C8CE;
+        }
+
+        & > i.fa-star:hover {
+            color: #FFC600;
+        }
+    
+        & > i.fa-star:focus {
+            outline: 0;
+        }
+    }
+    
+    & > button:focus {
+        cursor: pointer;
+        outline: 0;
+        
+        & > i {
+            background-color: rgba(255, 255, 255, 0.45);
+        }
+    }
+}
+
+.price {
+    font-size: 16px;
+    margin: 0 0.25em 0 0.25em;
+}
+
+.price.discount:before, .price.old:before {
+    content: '$';
+}
+
+.price.discount {
+    color: #FF4858;
+}
+
+.price.old {
+    text-decoration: line-through;
+    color: #C1C8CE;
+}
+
+.separator {
+    height: 2px;
+    background-color: #F6F7F8;
+}
+
+footer {
+    border-top: 2px solid #F6F7F8;
+}
